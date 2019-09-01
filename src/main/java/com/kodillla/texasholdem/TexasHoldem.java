@@ -200,7 +200,6 @@ public class TexasHoldem extends Application {
             playerSocer.setVisible(false);
             EventHandler<ActionEvent> eventCall = new EventHandler<ActionEvent>() {
                 public void handle(ActionEvent e) {
-
                     grid.getChildren().remove(dealerCardsFF);
                     grid.add(dealerCardsF, 5, 2, 2, 1);
 
@@ -314,6 +313,7 @@ public class TexasHoldem extends Application {
                         dealerCardsF.getChildren().clear();
                         playerCardsC.clear();
                         playerCardsF.getChildren().clear();
+
                         for (int i = 0; i < 5; i++) {
                             tableCardC.add(firstPack.getNewCard());
                             cardsF.getChildren().add(new ImageView(tableCardC.get(i).showCard()));

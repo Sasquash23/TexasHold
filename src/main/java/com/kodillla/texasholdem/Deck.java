@@ -22,6 +22,8 @@ public class Deck extends Stack<Card> {
         if (this.empty())
         {
             System.out.println("Run out of cards. New Deck.");
+            this.addAll(new CardPack());
+            shuffle();
         }
         return this.pop();
     }
@@ -31,6 +33,8 @@ public class Deck extends Stack<Card> {
         if (this.empty())
         {
             System.out.println("Run out of cards. New Deck.");
+            this.addAll(new CardPack());
+            shuffle();
         }
         Card dealerCard = this.pop();
         dealerCard.faceDown();

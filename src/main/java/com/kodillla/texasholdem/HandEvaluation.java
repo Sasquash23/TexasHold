@@ -53,7 +53,7 @@ public class HandEvaluation {
         for (Card card : cards) {
             cardNumber = card.getCardCode();
 
-            if (card.getCardName() == "Ace"){
+            if (card.getCardName().equals("Ace")){
                 if ( mCardsCode.keySet().contains(12 + cardNumber) && mCardsCode.keySet().contains(11 + cardNumber) &&
                         mCardsCode.keySet().contains(10 + cardNumber) && mCardsCode.keySet().contains(9 + cardNumber)){
                     //System.out.println("Checking RoyalFlush");
